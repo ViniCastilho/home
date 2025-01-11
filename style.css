@@ -1,5 +1,57 @@
+@font-face {
+	font-family: 'Fixedsys Excelsior 3.01';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Fixedsys Excelsior 3.01'), url('FSEX300.woff') format('woff');
+}
+
+:root {
+	--C0: #000;
+	--C1: #00A;
+	--C2: #0A0;
+	--C3: #0AA;
+	--C4: #A00;
+	--C5: #A0A;
+	--C6: #A50;
+	--C7: #AAA;
+	--C8: #555;
+	--C9: #55F;
+	--CA: #5F5;
+	--CB: #5FF;
+	--CC: #F55;
+	--CD: #F5F;
+	--CE: #FF5;
+	--CF: #FFF;
+}
+
 body {
-    padding: 1rem;
-    border: 0;
-    margin: 0;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+	font-family: 'Fixedsys Excelsior 3.01';
+	color: var(--CF);
+	background-color: var(--C1);
+}
+
+a {
+	color: var(--CB);
+}
+
+a:visited {
+	color: var(--CB);
+}
+
+.center-content {
+	padding: 0.875rem;
+	border: 0.125rem solid var(--CF);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	position: absolute;
+	left: 50%; top: 0;
+	transform: translate(-50%);
+	width: round(down, 70vw, 1rem);
+	height: auto;
+	background-color: var(--C9);
 }
