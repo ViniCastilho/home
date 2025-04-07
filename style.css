@@ -42,15 +42,17 @@ a:visited {
 	color: var(--CB);
 }
 
+.center-container {
+	display: flex;
+	justify-content: center;
+}
+
 .center-content {
 	padding: 0.875rem;
 	border: 0.125rem solid var(--CF);
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 
-	position: absolute;
-	left: 50%; top: 0;
-	transform: translate(-50%);
 	width: round(down, 70vw, 1rem);
 	overflow-wrap: break-word;
 	height: auto;
